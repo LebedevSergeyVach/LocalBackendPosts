@@ -96,13 +96,12 @@ public class Main {
         } catch (NotFoundException e) {
             System.out.println(e.getMessage());
         }
-        
+
         Users.removeById(2);
 
         allUsers = Users.getAll();
         System.out.println("All users after removal: " + allUsers);
 
-        // Попытка получить удаленного пользователя
         try {
             User deletedUser = Users.getById(2);
             System.out.println("User by id 2: " + deletedUser);
