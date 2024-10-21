@@ -1,5 +1,9 @@
 package space.serphantom.project;
 
-public record UserPreview(long id, String avatar) {
+import org.jetbrains.annotations.Nullable;
 
+public record UserPreview(
+        long id,
+        @Nullable
+        String avatar) {
 }
